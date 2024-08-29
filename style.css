@@ -1,0 +1,103 @@
+/* -----------========custom css ===========--------  */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    transition:all 0.3s ease-in-out;
+}
+:root{
+
+    /*color */
+    ---orange:#fd8549;
+    ---p-ordinary-text:#2f3c4c;
+    ---p-secondary-text:#566476;
+    ---white:#ffffff;
+    ---star-color:#fcb900;
+    ---cyan-blue:#0693e3;
+  
+    /* font  */
+    
+   
+    ---font-64-h1:64px;
+    ---font-48-h2:48px;
+    ---font-32-h3:32px;
+    ---font-24-h4:24px;
+    ---font-20-h5:20px;
+    ---font-18-p:18px;
+    ---font-14-h6:14px;
+    
+    /* others*/
+    ---font-14-a:14px;
+    ---font-25-f:25px;
+    ---font-40:40px;
+
+    /* font-family: "Be Vietnam Pro", sans-serif; */
+   
+   
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: "Be Vietnam Pro", sans-serif;
+
+}
+h1{
+    font-size: var(---font-64-h1);
+    color: var(---orange);
+    line-height: 80px;
+}
+h2{
+    font-size: var(---font-48-h2);
+    color: var(---orange);
+    line-height: 60px;
+}
+h3{
+    font-size: var(---font-32-h3);
+}
+h4{
+    font-size: var(---font-24-h4);
+}
+h5{
+    font-size: var(---font-20-h5);
+}
+h6{
+    font-size: var(---font-14-h6);
+}
+*:before, 
+*:after {
+    box-sizing: border-box;
+}
+img{
+    max-width: 100%;
+    height: auto;
+    
+}
+a{
+    cursor: pointer;
+    display: block;
+    font-family: "Nunito Sans", sans-serif;
+}
+
+
+html{
+    scroll-behavior: smooth;
+    width: 100%;
+    height: 100%;
+}
+body{
+    scroll-behavior: smooth; 
+    max-width: 100%;
+    height: auto;
+    font-family: "Nunito Sans", sans-serif;
+    background-color: #ffffff;
+    color: var(---p-ordinary-text);
+   
+} 
+.container{
+    padding: 2% 5%;
+    
+}
+section{
+    height: auto;
+    
+}
