@@ -63,6 +63,9 @@ h5{
 }
 h6{
     font-size: var(---font-14-h6);
+    font-family: "Nunito Sans", sans-serif;
+    text-transform: capitalize;
+    letter-spacing: 1px;
 }
 *:before, 
 *:after {
@@ -106,7 +109,7 @@ section{
 header{
     position: relative;
     width: 100%;
-    height: 140vh;
+    height: 150vh;
     background-image: url(img/day-care-page-header-blobs.svg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -223,6 +226,7 @@ button.btn:hover,
     margin-bottom: 5%;
     border-bottom: 1px solid #dbd2d29a;
 }
+
 .hero-card .btn{
     max-width: 50%;
     background-color: var(---p-ordinary-text);
@@ -291,7 +295,10 @@ button.btn:hover,
 #tuition,
 #why-us,
 #image-group,
-#activities{
+#activities,
+#parents,
+#founder,
+#vision-mission{
     margin: 3% 0;
     max-width: 100%;
     height: auto;
@@ -356,7 +363,7 @@ button.btn:hover,
 .quote-card img{
     border-radius:15px ;
 }
-.quote-card i{
+.quote-card i, .parents-content i{
     display: block;
     font-size: var(---font-32-h3);
     color: var(---orange);
@@ -734,4 +741,356 @@ hr{
     color: var(---p-secondary-text);
     font-size: var(---font-14-a);
  }
+ /* ----------------------------------------------------------  */
+ #parents h6{
+    text-align: center;
+    margin-bottom: 10%;
+    letter-spacing: 1px;
+ }
+ .parents-card{
+    max-width: 100%;
+    
+    min-height: 420px;
+    margin:  0 10%;
+    border: 1px solid var(---cyan-blue);
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 0px;
+    align-items: center;
+    border-radius: 20px;
+   
+ }
+ .parents-card img{
+    position: absolute;
+    top: -60px;
+    left: 0;
+    max-width:50%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 20px;
 
+ }
+ .parents-content{
+  position: absolute;
+  top: 15%;
+  right: 5%;
+  text-align: left;
+  width: 60%;
+  padding-left: 100px;
+ }
+ .parents-content p{
+    font-size: var(---font-24-h4);
+    font-weight: 600;
+    color: var(---p-secondary-text);
+    margin-bottom: 5%;
+    line-height: 30px;
+
+ }
+ .parents-content h5{
+    font-size: var(---font-18-p);
+    
+ }
+ /* ---------------------------------------------------- */
+ #place-hero{
+    position: relative;
+    max-width: 100%;
+    height: 70vh;
+    background-image: url(img/day-care-final-cta-image-background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:  top ;
+    background-attachment: scroll;
+    margin: 5% 0;
+    text-align: center;
+ }
+ .place-hero-content{
+    max-width: 100%;
+    margin: 5% auto;
+ }
+ .place-hero-content h2{
+    margin-top: 8%;
+    color: var(---white);
+    font-size: var(---font-64-h1);
+ }
+ .place-hero-content p{
+    font-size: var(---font-18-p);
+    color: var(---white);
+    margin: 3% 0;
+ }
+ .place-hero-content a{
+    background-color: var(---orange);
+    color: var(---white);
+    font-size: var(---font-18-p);
+    font-weight: 700;
+ }
+ .place-hero-content a:hover{
+    background-color: var(---white);
+    color: var(---cyan-blue);
+ }
+ /* ============================================footer start here================================ */
+ footer{
+    max-width: 100%;
+    margin: 0 auto;
+    height: auto;
+ }
+ .footer-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    gap: 30px;
+    max-width: 100%;
+    border-bottom: 1px solid #f0e3e3;
+   
+ }
+ .footer-card{
+    max-width: 100%;
+    margin:  0 auto 15%;
+    padding: 15px;
+ }
+ .footer-card img{
+    margin-bottom: 25px;
+    width: 80px;
+    height: auto;
+ }
+ .footer-card p{
+    font-size: var(---font-18-p);
+    font-weight: 600;
+    color: var(---p-secondary-text);
+    margin-bottom: 20px;
+ }
+ .footer-card .social-link{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+ }
+ .social-link a{
+    display: inline-block;
+    font-size: var(---font-24-h4);
+    color: var(---orange);
+    padding: 5px;
+ }
+ .social-link a:hover{
+    color: var(---p-ordinary-text);
+    transform: scale(1.1);
+ }
+ .footer-card .link-name{
+    font-size: var(---font-25-f);
+    color: var(---p-ordinary-text);
+    font-weight: 800;
+    margin-top: -50px;
+    
+    text-transform: capitalize;
+
+ }
+
+.footer-card ul{
+    width: 100%;
+    margin-top: 25%;
+    text-align: left;
+   
+}
+.footer-card ul li a{
+    margin: 5px 0;
+    color: var(---orange);
+    text-transform: capitalize;
+    font-size: var(---font-18-p);
+    font-weight: 600;
+    cursor: pointer;
+    text-align: left;
+}
+.footer-card ul li a:hover{
+    color: var(---p-secondary-text);
+}
+.footer-card:nth-child(4) ul li {
+
+    color: var(---p-secondary-text);
+    font-size: var(---font-18-p);
+    font-weight: 600;
+    margin: 5px 0;
+}
+.f-text{
+    text-align: center;
+   color: var(---p-secondary-text);
+   font-size: var(---font-14-a);
+    padding: 2% 0;
+}
+
+/* +++++++++++++++++++++++++++++about HTML start here++++++++++++++++++++++++++++++ */
+
+.about-us-hero{
+    width: 800px;
+    max-width: 100%;
+    height: auto;
+    margin:  0 auto 10%;
+}
+.about-us-hero h6{
+    margin-bottom:5% ;
+}
+.about-us-hero h1{
+    width: 800px;
+}
+.about-us-hero-container{
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+    justify-content: space-between;
+    align-items: center;
+}
+.about-us-hero-card{
+    width: 100%;
+}
+.about-us-hero-card img{
+    width: 100%;
+    height: auto;
+    border-radius: 25px;
+}
+.about-us-hero-card img:hover{
+    transform: scale(1.005);
+}
+.about-us-hero-card h3{
+    margin-bottom: 8%;
+    color: var(---p-ordinary-text);
+    width: 90%;
+    line-height: 45px;
+}
+.about-us-hero-card p{
+    font-size: var(---font-18-p);
+    color: var(---p-secondary-text);
+    font-weight: 500;
+    margin-bottom: 5%;
+}
+/* ------------------------------------------------ */
+.fonder-container{
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 45px;
+    justify-content: space-between;
+    align-items: center;
+}
+.founder-card{
+    width: 100%;
+}
+.founder-card h2{
+
+    margin-bottom: 5%;
+}
+.founder-card p{
+    font-size: var(---font-18-p);
+    font-weight: 500;
+    color: var(---p-secondary-text);
+    margin-bottom: 4%;
+    line-height: 30px;
+}
+.founder-card img{
+    width: 100%;
+    border-radius: 20px;
+}
+.founder-card img:hover{
+    transform: scale(1.02);
+}
+.founder-card:nth-child(3){
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.founder-card i{
+    font-size: var(---font-32-h3);
+    color: var(---orange);
+}
+.founder-card span{
+    font-size: var(---font-25-f);
+    margin-bottom: 5%;
+}
+.founder-card h5{
+    font-size: var(---font-18-p);
+    color: var(---p-secondary-text);
+}
+.founder-card:nth-child(3) img{
+    width: 150px;
+}
+.irrc-container{
+    max-width: 100%;
+    margin:  8% auto;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+.irrc-card{
+    width: 100%;
+    padding: 20px 24px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #0692e380;
+    border-radius: 10px;
+    box-shadow: #0692e34b 0px 2px 8px 0px;
+}
+.irrc-card:hover{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+.irrc-card i{
+    font-size: var(---font-40);
+    color: var(---orange);
+    margin-bottom: 8%;
+}
+.irrc-card span{
+    font-size: var(---font-25-f);
+    font-weight: 700;
+    color: var(---p-ordinary-text);
+    margin-bottom: 5%;
+}
+.irrc-card p{
+    font-size: var(---font-18-p);
+    color: var(---p-secondary-text);
+}
+/* ----------------------------------------------- */
+#vision-mission{
+    background: url(img/day-care-page-header-blobs.svg);
+    background-position: none;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 99vh;
+}
+.vision-mission-container{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    padding: 0 5%;
+   
+   
+}
+.vision-mission-card{
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 50px;
+    padding: 4% 12%;
+    border-bottom: 1px solid #0692e359;
+}
+.vision-mission-card h6{
+    font-weight: 800;
+    letter-spacing: 5px;
+    margin-top: 1rem;
+    padding-right: 10%;
+}
+.vision-mission-card h3{
+    font-weight: 400;
+    color: var(---p-secondary-text);
+    text-align: left;
+}

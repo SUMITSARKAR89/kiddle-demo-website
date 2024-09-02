@@ -1,0 +1,115 @@
+:root{
+---orange:#fd8549;
+---p-ordinary-text:#2f3c4c;
+---p-secondary-text:#566476;
+---white:#ffffff;
+---star-color:#fcb900;
+---cyan-blue:#0693e3;
+}
+/* ---------------------------------NAV menu---------------------------- */
+.open i{
+    font-size: 1.5rem;
+    color: var(---orange);
+    background-color: var(---p-secondary-text);
+    padding: 6px;
+    border-radius: 100%;
+   
+    
+}
+.menu-icon{
+    display: none;
+}
+.open{
+    display: none;
+    cursor: pointer;
+}
+#mobile-nav{
+    position: absolute;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 90vh;
+    z-index: 1000;
+    background-color: #fd854981;
+    backdrop-filter: blur(10px);
+    padding: 5%;
+    border-radius: 0 0 15% 0;
+    transition: 0.5s;
+    
+}
+#mobile-nav .mobile-logo{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5%;
+}
+.mobile-logo img{
+    width: 80px;
+}
+.mobile-logo .close{
+    display: inline-block;
+    cursor: pointer;
+}
+.mobile-logo .close i{
+    font-size: 1.8rem;
+    color: var(---orange);
+    border-radius: 100%;
+    
+    opacity: 0.8;
+}
+.mobile-logo .close i:hover{
+    transform: scale(1.1);
+    opacity: 1;
+    color: #2f3c4c;
+   
+}
+#mobile-nav-link{
+    text-align: center;
+    width: 100%;
+    height: auto;
+}
+#mobile-nav-link li a{
+    cursor: pointer;
+    color: var(---p-ordinary-text);
+    margin: 5px;
+    padding: 10px;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    font-weight: 800;
+}
+#mobile-nav-link li a:hover{
+    border: 1px solid #ffffff28;
+    color: var(---p-secondary-text);
+}
+.nav-social-link{
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+}
+.nav-social-link a{
+    font-size: 1.6rem;
+    color: #2f3c4c;
+    display: inline-block;
+    margin: 5px;
+    padding: 3px;
+    cursor: pointer;
+    
+}
+.nav-social-link a:hover{
+    color: var(---white);
+    transform: scale(1.1);
+}
+@media(max-width:980px){
+    #button, .nav-link{
+        display: none;
+    }
+    .open{
+        display: block;
+        margin-top: 5%;
+    }
+    .menu-icon{
+        display: block;
+    }
+}
