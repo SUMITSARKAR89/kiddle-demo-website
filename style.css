@@ -187,7 +187,7 @@ button.btn:hover,
     width: 100%;
     gap: 30px;
 }
-.hero-container.hero-card{
+.hero-container .hero-card{
     max-width: 100%;
     margin: 0 auto;
     position: relative;
@@ -206,10 +206,14 @@ button.btn:hover,
     color: var(---orange);
 
 }
+.hero-card-mobile{
+    display: none;
+}
 .hero-card h1{
     margin-bottom: 5%;
+ 
 }
-.hero-card .p{
+.hero-card .p, .program-hero .p{
     font-size: var(---font-18-p);
     color: var(---p-secondary-text);
     font-weight: 600;
@@ -228,7 +232,7 @@ button.btn:hover,
 }
 
 .hero-card .btn{
-    max-width: 50%;
+    max-width: 100%;
     background-color: var(---p-ordinary-text);
     color: var(---white);
     text-align: center;
@@ -253,7 +257,7 @@ button.btn:hover,
     color: var(---p-secondary-text);
     font-size: var(---font-14-a);
 }
-.hero-card p i{
+.hero-card p i, .program-hero p i{
     background-color: var(---orange);
     padding: 10px;
     border-radius: 100%;
@@ -298,7 +302,13 @@ button.btn:hover,
 #activities,
 #parents,
 #founder,
-#vision-mission{
+#vision-mission,
+#learning, 
+#process,
+#requirement,
+#contact-page,
+#image-slider,
+#iframe{
     margin: 3% 0;
     max-width: 100%;
     height: auto;
@@ -549,7 +559,7 @@ hr{
 }
 .tuition-end .btn{
     background-color: var(---p-ordinary-text);
-    max-width: 20%;
+    max-width: 100%;
     font-size: var(---font-18-p);
     margin:  0 auto;
     color: var(---white);
@@ -764,6 +774,7 @@ hr{
  }
  .parents-card img{
     position: absolute;
+
     top: -60px;
     left: 0;
     max-width:50%;
@@ -922,19 +933,27 @@ hr{
 }
 
 /* +++++++++++++++++++++++++++++about HTML start here++++++++++++++++++++++++++++++ */
-
+header.aboutusheader{
+    width: 100%;
+    height: 205vh;
+     margin-bottom: 5%;
+}
+header.programmeheader{
+   
+}
 .about-us-hero{
     width: 800px;
     max-width: 100%;
     height: auto;
     margin:  0 auto 10%;
 }
-.about-us-hero h6{
+.about-us-hero h6, .program-hero h6{
     margin-bottom:5% ;
 }
 .about-us-hero h1{
     width: 800px;
 }
+
 .about-us-hero-container{
     width: 100%;
     height: auto;
@@ -1061,6 +1080,8 @@ hr{
     background-repeat: no-repeat;
     background-size: cover;
     height: 99vh;
+    max-width: 100%;
+    margin: 0 auto;
 }
 .vision-mission-container{
     display: flex;
@@ -1093,4 +1114,559 @@ hr{
     font-weight: 400;
     color: var(---p-secondary-text);
     text-align: left;
+}
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++programe HTML+++++++++++++++++++++++++++++++++++++ */
+.program-hero{
+    width: 1000px;
+    max-width: 100%;
+    height: auto;
+    margin:  0 auto 10%;
+}
+/* ----------------------------------------------------------- */
+.learning-container{
+    max-width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    height: auto;
+    margin: 5% 0;
+}
+.learning-container .learning-card{
+    width: 90%;
+    margin: 3% auto;
+    height: auto;
+}
+.learning-card h6{
+    margin-bottom: 3%;
+}
+.learning-card h2{
+
+    margin-bottom: 5%;
+}
+.learning-card p{
+    font-size: var(---font-18-p);
+    font-weight: 500;
+    color: var(---p-secondary-text);
+    margin-bottom: 3%;
+}
+.learning-content{
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    padding: 4% 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 30px;
+}
+.learning-content i{
+    color: var(---white);
+    background-color: var(---orange);
+    padding: 15px;
+    border-radius: 100%;
+    
+}
+.learning-content h5{
+    color: var(---p-ordinary-text);
+    margin-bottom: 2%;
+}
+.learning-content p{
+    font-size: var(---font-14-h6);
+}
+/* ------------------------------------------------------------- */
+.image-slider-container{
+    max-width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+}
+.image-siler-tag{
+    
+   max-width: 100%;
+    height: 500px;
+    margin:  0 auto;
+    padding: 5% 0;
+    position: relative;
+    background-color: #0692e313;
+    border-radius: 20px;
+}
+.image-siler-tag img{
+    max-width: 100%;
+    height: 400px;
+    object-fit: cover;
+    position: relative;
+    padding: 10px;
+    border-radius: 50px;
+}
+.image-siler-tag .prev{
+    position: absolute;
+    top: 40%;
+    left: 0%;
+    margin: 15px;
+    z-index: 3;
+    border-radius: 100%;
+    background-color: rgba(0, 0, 0, 0.466);
+    color: var(---orange);
+    padding: 5px;
+    border: 0;
+    outline: 0;
+    font-size: var(---font-25-f);
+    cursor: pointer;
+    text-align: center;
+}
+.image-siler-tag .next{
+    position: absolute;
+    top: 40%;
+    left: 88%;
+    margin: 15px;
+    z-index: 3;
+    border-radius: 100%;
+    background-color: rgba(0, 0, 0, 0.466);
+    color: var(---orange);
+    padding: 5px;
+    border: 0;
+    outline: 0;
+    font-size: var(---font-25-f);
+    cursor: pointer;
+    text-align: center;
+
+}
+.image-siler-tag button:hover{
+
+    background-color: #2f3c4c;
+    color: #fff;
+}
+
+    
+   
+   
+
+/* ---------------------------------------------------------- */
+#infant{
+    max-width: 100%;
+    width: 100%;
+    margin: 0 auto;
+    height: 100vh;
+    background: url(img/day-care-program-image-fixed-background-3.jpg);
+    background-position:center right ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    background-attachment: fixed;
+    position: relative;
+    
+
+}
+.container-infant{
+    position: absolute;
+    width: 50%;
+    left: 0;
+    background-color: var(---white);
+    height: 100vh;
+    padding: 0 3% 0 8%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+.container-todlers{
+    position: absolute;
+    right: 0;
+    width: 50%;
+    background-color: var(---white);
+    height: 100vh;
+    padding: 0 3% 0 8%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+}
+.container-infant h6, .container-todlers h6{
+    margin-bottom: 5%;
+}
+.container-infant h2, .container-todlers h2{
+    text-transform: capitalize;
+    margin-bottom: 3%;
+}
+.container-infant p, .container-todlers p{
+    margin-bottom: 5%;
+    font-size: var(---font-18-p);
+    color: var(---p-secondary-text);
+
+}
+.container-infant ul, .container-todlers ul{
+    margin-bottom: 5%;
+}
+.container-infant li , .container-todlers li{
+    margin: 10px 0;
+    font-size: var(---font-18-p);
+    color: var(---p-ordinary-text);
+    font-weight: 600;
+}
+.container-infant i, .container-todlers i{
+    font-size: var(---font-20-h5);
+    color: var(---cyan-blue);
+    padding-right: 10px;
+    opacity: 0.6;
+}
+.container-infant a, .container-todlers a{
+    background-color: var(---p-ordinary-text);
+    color: var(---white);
+    font-size: var(---font-20-h5);
+}
+.container-infant a:hover, .container-todlers a:hover{
+    background-color: var(---orange);
+}
+
+#todlers{
+    max-width: 100%;
+    width: 100%;
+    margin: 0 auto;
+    height: 100vh;
+    background: url(img/day-care-program-image-fixed-background-2.jpg);
+    background-position: left left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    background-attachment: fixed;
+    position: relative;
+    
+}
+#preschool{
+    max-width: 100%;
+    width: 100%;
+    margin: 0 auto;
+    height: 100vh;
+    background: url(img/day-care-program-image-fixed-background-1.jpg);
+    background-position:center right ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    background-attachment: fixed;
+    position: relative;
+    
+}
+/* +++++++++++++++++++++++++++++++++++++++++++++admission HTML +++++++++++++++++++++++++++++++++++++++++ */
+
+.program-hero p{
+    font-size: var(---font-18-p);
+    color: var(---p-secondary-text);
+    margin: 3% 0;
+}
+.admission-hero{
+    border-bottom: 1px solid #56647636;
+    height: auto;
+}
+/* ---------------------------------------------- */
+
+.process-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 5% 0;
+}
+.process-card{
+    padding: 20px;
+    width: 100%;
+    height: auto;
+    border: 1px solid #0692e38a;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    box-shadow: #0692e328 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+
+}
+.process-card:hover{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.process-card span{
+    font-size: var(---font-48-h2);
+    font-weight: 800;
+    color: #0692e3ab;
+    letter-spacing: -2px;
+
+}
+.process-card h5{
+    font-weight: 600;
+}
+.process-card p{
+    font-size: var(---font-14-a);
+    font-weight: 600;
+    color: var(---p-secondary-text);
+    margin-bottom: 5%;
+}
+.process-image-container{
+    max-width: 100%;
+    margin: 5% auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 45px;
+}
+.process-image-container img{
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+.process-image-container img:hover{
+    transform: scale(1.01);
+}
+/* ------------------------------------------ */
+.requirement-container{
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto 8%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 65px;
+    align-items: flex-start;
+    justify-content: center
+
+}
+.requirement-card{
+    width: 100%;
+    height: auto;
+}
+.requirement-card h2{
+    margin-bottom: 5%;
+}
+.requirement-card p{
+    margin-bottom: 6%;
+    font-size: var(---font-18-p);
+    color: var(---p-secondary-text);
+}
+.requirement-card a{
+    background-color: var(---p-ordinary-text);
+    color: var(---white);
+    font-size: var(---font-18-p);
+}
+.requirement-card a:hover{
+    background-color: var(---orange);
+}
+.requirement-card ul{
+   padding: 3%;
+    position: relative;
+    margin-top: 10%;
+}
+.requirement-card ul::before{
+    width: 10%;
+    height: 2px;
+    position: absolute;
+    content: "";
+   top: 0;
+   left: 3%;
+   margin-top: -5%;
+    background-color: #0692e370;
+}
+.requirement-card ul li{
+    font-size: var(---font-18-p);
+    color: var(---p-ordinary-text);
+    font-weight: 700;
+    margin: 10px 0;
+}
+.requirement-card ul li i{
+
+    font-size: var(---font-14-a);
+    color: var(---white);
+    background-color: #0692e37c;
+    padding: 1px;
+    border-radius: 100%;
+    margin-right: 10px;
+}
+/* ++++++++++++++++++++++++++++++++++++++++++++++++contact HTML+++++++++++++++++++++++++++++++++++ */
+.contact-container{
+    max-width: 100%;
+    margin: 0 auto;
+    height: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 55px;
+    padding: 3% 0;
+    border-bottom: 1px solid #5664763a;
+}
+.contact-container-cards1{
+    max-width: 30%;
+    width: 100%;
+    height: auto;
+    border-right: 1px solid #56647636;
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+    margin: 3% 0;
+}
+.contact-container-cards1 .contact-card{
+    border-bottom: 1px solid #56647636; 
+    padding: 2% 0 10%;
+    margin: 0 30px;
+}
+.contact-card h5{
+    font-size: var(---font-25-f);
+    color: var(---p-ordinary-text);
+    margin-bottom: 2%;
+}
+.contact-card p{
+   margin-bottom: 3%;
+   font-size: var(---font-18-p);
+   color: var(---p-secondary-text);
+}
+.contact-card a{
+    font-size: var(---font-18-p);
+    font-weight: 700;
+    color: var(---orange);
+    cursor: pointer;
+}
+.contact-card a:hover{
+    color: var(---p-ordinary-text);
+}
+.contact-card:nth-child(4){
+    border-bottom: none;
+}
+.contact-card h6{
+    margin-bottom: 5%;
+    padding-left: 5%;
+}
+.contact-card .contact-social{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    text-align: center;
+    margin-top: 5%;
+}
+.contact-social a{
+    padding: 0 5px;
+    font-size: var(---font-25-f);
+    color: var(---p-ordinary-text);
+    
+    display: block;
+}
+.contact-social a:hover{
+    color: var(---orange);
+}
+
+.contact-container-cards2{
+    max-width: 55%;
+    height: auto;
+    width: 100%;
+   
+}
+.contact-container-cards2 form{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    max-width: 100%;
+    margin: 3% auto;
+}
+form .input-form{
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.input-form label, 
+.chekbox-form label{
+    text-transform: capitalize;
+    font-size: var(---font-20-h5);
+    font-weight: 700;
+    color: var(---p-secondary-text);
+    position: relative;
+}
+.chekbox-form ul{
+    margin-top: 3%;
+}
+.chekbox-form ul li{
+    padding: 5px 0;
+    text-transform: capitalize;
+    font-size: var(---font-18-p);
+    color: var(---p-ordinary-text);
+    font-weight: 600;
+}
+.chekbox-form ul li input{
+    margin-right: 8px;
+   
+}
+.input-form label::after{
+    position: absolute;
+    content: "*";
+    width: 100%;
+    color: var(---star-color);
+}
+.input-form input, .input-form textarea{
+    width: 100%;
+    padding:  15px;
+    border: 1px solid #56647634;
+    outline: 0;
+    background-color: #edf0f380;
+    font-size: var(---font-18-p);
+    color: var(---p-secondary-text);
+    border-radius: 0 8px 8px 0;
+}
+.contact-container-cards2 .btn{
+    background-color: var(---p-ordinary-text);
+    color: var(---orange);
+    font-size: var(---font-18-p);
+
+    display: block;
+    max-width: 130px;
+    text-align: center;
+}
+.contact-container-cards2 .btn:hover{
+    background-color: var(---orange);
+    color: var(---white);
+}
+/* ---------------------------------------------------- */
+.address-container{
+    max-width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+}
+.address-card{
+    width: 100%;
+}
+.address-card h6{
+    font-weight: 800;
+    letter-spacing: 3px;
+    margin-bottom: 5%;
+}
+.address-card p{
+    font-size: var(---font-18-p);
+    color: var(---p-secondary-text);
+    font-weight: 600;
+    margin-bottom: 2%;
+}
+.address-card a{
+    font-size: var(---font-20-h5);
+    color: var(---orange);
+    font-weight: 600;
+    text-transform: capitalize;
+}
+.address-card i{
+    font-size: var(---font-24-h4);
+    margin-right: 8px;
+}
+.address-card a:hover{
+    color: var(---p-secondary-text);
+}
+/* --------------------------------------------------- */
+#iframe{
+    width: 100%;
+}
+#iframe iframe{
+    max-width: 100%;
+    height: 80vh;
+    margin: 0 auto;
 }

@@ -101,6 +101,124 @@
     color: var(---white);
     transform: scale(1.1);
 }
+@media(max-width:1400px){
+    .container{
+        padding: 2% 3%;
+    }
+}
+@media(max-width:1280px){
+   :root{
+    ---font-64-h1:50px;
+    ---font-48-h2:40px;
+    ---font-32-h3:28px;
+    ---font-24-h4:22px;
+    ---font-20-h5:18px;
+    ---font-18-p:16px;
+    ---font-14-h6:13px;
+    
+    /* others*/
+    ---font-14-a:13px;
+    ---font-25-f:24px;
+    ---font-40:35px;
+   }
+   h1{
+    line-height: 70px;
+}
+h2{
+    line-height: 50px;
+}
+h3{ 
+    line-height: 40px;
+}
+
+
+#place-hero{
+    height: 50vh;
+   
+ }
+ 
+#vision-mission{
+  
+    height: 70vh;
+}
+header.programmeheader{
+    height: 70vh;
+}
+}
+@media(max-width:1080px){
+    .hero-container{ 
+        height: 120vh;
+       grid-template-columns: 1fr;
+    }
+    .hero-card-btn{
+   
+       flex-direction: column;
+       align-items: flex-start;
+    }
+    .hero-rating{
+        margin-left: 10px;
+        margin-bottom: 0;
+       
+    }
+    .hero-card img{
+        display: none;
+    }
+    .hero-card-mobile{
+        display: block;
+        position: absolute;
+        right: 0;
+    
+    }
+    .hero-card-mobile .img{
+        width: 400px;
+        padding: 15px;
+        margin-top: 70%;
+        border-radius: 50px 0 50px 0;
+    }
+    #aboutus, 
+#quote,
+#daycare,
+#tuition,
+#why-us,
+#image-group,
+#activities,
+#parents,
+#founder,
+#vision-mission,
+#learning, 
+#process,
+#requirement,
+#contact-page,
+#image-slider,
+#iframe{
+    margin: 1.5% 0;
+  
+}
+.aboutus-container, 
+.why-us-container, 
+.daycare-container,
+.about-us-hero-container,
+.image-slider-container{
+    grid-template-columns: 1fr;
+}
+.daycare-card{
+    margin-top: 15%;
+}
+.daycare-card img{
+    width: 50%;
+}
+header.aboutusheader{
+  
+    height: 260vh;
+    
+}
+.irrc-container,
+.process-container{
+    grid-template-columns: repeat(2, 1fr);
+}
+   
+}
+
 @media(max-width:980px){
     #button, .nav-link{
         display: none;
@@ -112,4 +230,47 @@
     .menu-icon{
         display: block;
     }
+    header{
+        height: 120vh;
+      
+    }
+    .daycare-card{
+        height: 380px;
+    }
+    .tuition-container, .fonder-container{
+        grid-template-columns: 1fr;
+    }
+    
+    .parents-card{
+        flex-direction: column;
+        padding: 5% 0;
+
+    }
+    .parents-card img, 
+    .parents-content{
+        position: relative;
+        width: 100%;
+        top: 0;
+        left: 0;
+        max-width: 100%;
+        padding: 3%;
+    }
+    .footer-container{
+        grid-template-columns: repeat(2, 1fr);
+        
+    }
+    header.aboutusheader{
+  
+        height: 220vh;
+        
+    }
+    #vision-mission{
+  
+        height: 90vh;
+       
+    }
+    .vision-mission-card{
+        padding: 0;
+    }
+
 }
